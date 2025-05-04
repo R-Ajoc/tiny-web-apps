@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>cheeryshelf</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-cherry px-3">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="CherryShelf Logo" width="200" height="70">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Browse
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Light Novels</a></li>
+            <li><a class="dropdown-item" href="#">Movie & Series Adaptations</a></li>
+            <li><a class="dropdown-item" href="#">New York Times Bestsellers</a></li>
+            <li><a class="dropdown-item" href="#">Award-Winning Picks</a></li>
+            <li><a class="dropdown-item" href="#">Short & Sweet Reads</a></li>
+            <li><a class="dropdown-item" href="#">BookTok Favorites</a></li>
+            <li><a class="dropdown-item" href="#">Timesless Classics</a></li>
+            <li><a class="dropdown-item" href="#">More...</a></li>
+        </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">My Picks</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container text-center my-4">
+    <div class="row">
+        <div class="col-md-4">
+            <!-- Announcement Board -->
+            <div class="announcement-board mb-4">
+                <h5 class="fw-bold">Announcement Board</h5>
+                <hr>
+                <p><strong>🌸 New Feature:</strong> Try our personalized reading journey!</p>
+                <p><strong>📚 Book Drive:</strong> Ongoing until May 31st — help us spread the joy of reading!</p>
+            </div>
+
+            <!-- Donation Box -->
+            <div class="donation-box">
+                <h6 class="fw-bold">Support CherryShelf</h6>
+                <p>Donate books or funds to help young readers discover new worlds! 📚</p>
+                <hr>
+                <ul class="donation-list">
+                    <li>📘 Donate gently used books</li>
+                    <li>💸 Send financial support via GCash or PayPal</li>
+                    <li>📝 Support our monthly book box fund</li>
+                </ul>
+                <div class="donation-details mt-3">
+                    <p><strong>GCash:</strong> 0917 123 4567 (CherryShelf)</p>
+                    <p><strong>PayPal:</strong> donate@cherryshelf.org</p>
+                </div>
+                <a href="#" class="btn btn-pink mt-3">Donate Now</a>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <!-- Column 2 content -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/display-1.png" alt="Los Angeles" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/display-2.png" alt="Chicago" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/display-3.png" alt="New York" class="d-block w-100">
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+            <div class="randomBook mt-5">
+                <h4 class="fw-bold">Can't Decide?</h4>
+                <p>Check our random book of the week!</p>
+                <hr>
+                <div class="d-flex justify-content-center">
+                    <div class="card flex-row custom-card">
+                        <img src="images/rdm-book-1.jpg" class="card-img-left" alt="random-book">
+                        <div class="card-body">
+                            <h5 class="card-title">Nothanger Abbey</h5>
+                            <hr>
+                            <p class="card-text">
+                                Northanger Abbey is a satirical novel by Jane Austen, published posthumously in 1817. 
+                                It follows the story of Catherine Morland as she navigates her first visit to Bath, 
+                                where she meets new friends and becomes infatuated with the mysterious Henry Tilney.
+                                The novel humorously critiques the Gothic novel genre and explores themes of imagination,
+                                social class, and the nature of love.
+                            </p>
+                            <a href="#" class="btn btn-warning">Read</a>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        
+        <div class="NewBooks mt-5">
+            <h4 class="fw-bold">Not to your liking?</h4>
+            <p>Explore what's new to us!</p>
+            <hr>
+            <div class="row">
+              <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                  <img src="images/newbook-1.jpg" class="card-img-top" alt="Book 1">
+                  <div class="card-body">
+                    <h5 class="card-title">The Girl Who Fell Beneath The Sea</h5>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                  <img src="images/newbook-2.jpg" class="card-img-top" alt="Book 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Lovers By The Sea</h5>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                  <img src="images/newbook-3.jpg" class="card-img-top" alt="Book 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Love Like Falling Petals</h5>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                  <img src="images/newbook-4.jpg" class="card-img-top" alt="Book 4">
+                  <div class="card-body">
+                    <h5 class="card-title">Ex Marks The Spot</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        <div class="col-md-12 mt-5 text-center"></div>
+            <h3 class="fw-bold">No?</h3>
+            <p>Then feel free to visit our library</p>
+            <a href="#" class="to_library mt-1 d-flex flex-column align-items-center text-decoration-none">
+            <img src="images/to-library.png" alt="Library Icon" class="lib-icon">
+            </a>
+        </div>
+              
+        <footer class="custom-footer py-4">
+            <hr>
+            <br>
+            <p>&copy; 2025 CheeryShelf | All Rights Reserved</p>
+        </footer>
+          
+    </div>
+</div>
+
+<!-- Music Modal -->
+<div id="musicModal" class="modal-overlay">
+    <div class="modal-content">
+      <h5 class="modal-title">🍒 Welcome to CheeryShelf!</h5>
+      <p>Want some background music while you browse?</p>
+      <div class="d-flex justify-content-center gap-3 mt-3">
+        <button id="playMusicBtn" class="btn btn-danger">Play Music 🎵</button>
+        <button id="closeModalBtn" class="btn btn-outline-secondary">No, thanks</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Background Music -->
+  <audio id="bgMusic" src="music/bg-music1.mp3" loop></audio>
+
+
+  <script>
+    const playBtn = document.getElementById("playMusicBtn");
+    const closeBtn = document.getElementById("closeModalBtn");
+    const modal = document.getElementById("musicModal");
+    const music = document.getElementById("bgMusic");
+  
+    playBtn.addEventListener("click", function () {
+      music.play();
+      modal.style.display = "none";
+    });
+  
+    closeBtn.addEventListener("click", function () {
+      modal.style.display = "none";
+    });
+  </script>
+  
+  
+  
+
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
